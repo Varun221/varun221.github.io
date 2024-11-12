@@ -3981,7 +3981,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: rgb(30, 29, 29);
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -3998,7 +3998,7 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: black;
   background-color: #0d6efd;
 }
 

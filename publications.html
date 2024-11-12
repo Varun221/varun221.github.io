@@ -1,130 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XV6NYR8XS"></script>
-        <script>
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XV6NYR8XS"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-1XV6NYR8XS');
-        </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>YV</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
-        <link rel="stylesheet" href="./academicons-1.9.2/css/academicons.min.css">
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>YV</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/simplestyles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./academicons-1.9.2/css/academicons.min.css">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Varun</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="timeline.html">Timeline</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" aria-current="page" href="publications.html">Publications</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="https://drive.google.com/file/d/18D-SyJNI2KFJn7eBfa5akoBUDCrCHe-V/view?usp=sharing">Resume</a></li>
+</head>
 
-                    </ul>
+<body>
+
+    <header class="site-header">
+
+        <div class="wrapper">
+
+            <a class="site-title" href="/">Varun Yerram</a>
+
+            <nav class="site-nav">
+                <a href="#" class="menu-icon"></a>
+                <div class="trigger">
+                    <a class="page-link" href="/publications.html">Publications</a>
+                    <a class="page-link" href="assets/ResearchCV.pdf">CV</a>
                 </div>
-            </div>
-        </nav>
-
-
-        <!-- Page content-->
-
-        <!-- Page content-->
-        <br><br><br><br>
-        <div class="container">
-
-            <!-- 1st row -->
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <h1 style="font-family: 'Work Sans', sans-serif;">Publications</h1>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <h4 style="font-family: 'Work Sans', sans-serif; font-weight: 500;">[1] HiRE: High Recall Approximate Top-k Estimation for Efficient LLM Inference </h4>
-                    <p style="font-family: 'Montserrat', sans-serif;">
-                        Autoregressive decoding with generative Large Language Models (LLMs) on accelerators (GPUs/TPUs) is often memory-bound where most of the time is spent on transferring model parameters from high bandwidth memory (HBM) to cache. On the other hand, recent works show that LLMs can maintain quality with significant sparsity/redundancy in the feedforward (FFN) layers by appropriately training the model to operate on a top-k fraction of rows/columns (where k≈0.05), there by suggesting a way to reduce the transfer of model parameters, and hence latency. However, exploiting this sparsity for improving latency is hindered by the fact that identifying top rows/columns is data-dependent and is usually performed using full matrix operations, severely limiting potential gains. To address these issues, we introduce HiRE (High Recall Approximate Top-k Estimation). HiRE comprises of two novel components: (i) a compression scheme to cheaply predict top-k rows/columns with high recall, followed by full computation restricted to the predicted subset, and (ii) DA-TOP-k: an efficient multi-device approximate top-k operator. We demonstrate that on a one billion parameter model, HiRE applied to both the softmax as well as feedforward layers, achieves almost matching pretraining and downstream accuracy, and speeds up inference latency by 1.47× on a single TPUv5e device.
-                    </p>
-                    
-                    <a href="https://arxiv.org/abs/2402.09360" class="btn btn-primary">Paper</a>
-
-
-                </div>
-            </div>
-
-            <!-- 2nd row -->
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <h4 style="font-family: 'Work Sans', sans-serif; font-weight: 500;">[2] Trans-KBLSTM: An External Knowledge Enhanced Transformer BiLSTM Model for Tabular Reasoning </h4>
-                    <p style="font-family: 'Montserrat', sans-serif;">
-                        Natural language inference on tabular data is a challenging task. Existing approaches lack the world and common sense knowledge required to perform at a human level. While massive amounts of KG data exist, approaches to integrate them with deep learning models to enhance tabular reasoning are uncommon. In this paper, we investigate a new approach using BiLSTMs to incorporate knowledge effectively into language models. Through extensive analysis, we show that our proposed architecture, Trans-KBLSTM improves the benchmark performance on InfoTabS, a tabular NLI dataset.
-                    </p>
-                    
-                    <a href="https://aclanthology.org/2022.deelio-1.7/" class="btn btn-primary">Paper</a>
-                    <a href="https://github.com/Varun221/trans-kblstm" class="btn btn-primary">Code</a>
-                    <a href="https://trans-kblstm.github.io/" class="btn btn-primary">Website</a>
-
-
-                </div>
-            </div>
-
-            <br><br><br>
-             <!-- 3rd row -->
-             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <h4 style="font-family: 'Work Sans', sans-serif; font-weight: 500;">[1] Extraction and Calculation of Roadway Area from Satellite Images Using Improved Deep Learning Model and Post-Processing </h4>
-                    
-                    <p style="font-family: 'Montserrat', sans-serif;">
-                        Roadway area calculation is a novel problem in remote sensing and urban planning. This paper models this problem as a two-step problem, roadway extraction, and area calculation. Roadway extraction from satellite images is a problem that has been tackled many times before. This paper proposes a method using pixel resolution to calculate the area of the roads covered in satellite images. The proposed approach uses novel U-net and Resnet architectures called U-net++ and ResNeXt. The state-of-the-art model is combined with the proposed efficient post-processing approach to improve the overlap with ground truth labels. The performance of the proposed road extraction algorithm is evaluated on the Massachusetts dataset and it is shown that the proposed approach outperforms the existing solutions which use models from the U-net family.
-                    </p>
-                    <a href="https://www.mdpi.com/2313-433X/8/5/124" class="btn btn-primary">Paper</a>
-
-
-                </div>
-            </div>
-
-
-
-
+            </nav>
 
         </div>
-        
-        <br><br><br><br><br><br><br><br><br>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </header>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <br>
+            <table style="width: 100%; border-collapse: collapse; font-family: 'Work Sans', sans-serif;">
+                <tbody>
+                    <tr style="background-color: #f2f0f0a8;">
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> Time-Reversal Provides Unsupervised Feedback to
+                                LLMs
+                            </h3>
+                            <p style="color: #6c757d;"><u>Yerram Varun<sup>*</sup></u>, Rahul Madhavan<sup>*</sup>, Sravanti
+                                Addepalli<sup>*</sup>, Arun Suggala, Karthikeyan Shanmugam, Prateek Jain</p>
+                            <p><a href="https://nips.cc/virtual/2024/poster/93684" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Spotlight Presentation @ NeurIPS 2024</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> Does Safety Training of LLMs Generalize to
+                                Semantically Related Natural Prompts?
+                            </h3>
+                            <p style="color: #6c757d;">Sravanti Addepalli, <u>Yerram Varun</u>, Arun Suggala, Karthikeyan Shanmugam, Prateek
+                                Jain</p>
+                            <p><a href="https://tinyurl.com/safetyopenreviewpubliclink" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Accepted to SafeGenAI workshop @ NeurIPS 2024</p>
+                            <!-- <p><i class="fa-solid fa-spinner"></i> Under submission to ICLR 2025</p> -->
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f2f0f0a8;">
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> HiRE: High Recall Approximate Top-k Estimation
+                                for Efficient LLM Inference
+                            </h3>
+                            <p style="color: #6c757d;">Yashas Samaga B L<sup>*</sup>, <u>Yerram Varun<sup>*</sup></u>, Chong You, Srinadh
+                                Bhojanapalli, Sanjiv Kumar, Prateek Jain, Praneeth Netrapalli</p>
+                            <p><a href="https://arxiv.org/abs/2402.09360" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> FlowVQA: Mapping Multimodal Logic in Visual
+                                Question Answering with Flowcharts
+                            </h3>
+                            <p style="color: #6c757d;">Shubhankar Singh<sup>*</sup>, Purvi Chaurasia<sup>*</sup>, <u>Yerram Varun</u>, Pranshu
+                                Pandya, Vatsal Gupta, Vivek Gupta, and Dan Roth</p>
+                            <p><a href="https://aclanthology.org/2024.findings-acl.78/" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Accepted to Findings of ACL 2024</p>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f2f0f0a8;">
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> Trans-KBLSTM: An External Knowledge Enhanced
+                                Transformer BiLSTM Model for Tabular Reasoning
+                            </h3>
+                            <p style="color: #6c757d;"><u>Yerram Varun</u>, Aayush Sharma, Vivek Gupta</p>
+                            <p><a href="https://aclanthology.org/2022.deelio-1.7/" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Best Paper Award @ DeeLIO, ACL 2022</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> Provably High Degree Polynomial Representation
+                                Learning with Neural Networks
+                            </h3>
+                            <p style="color: #6c757d;">Rahul Madhavan, <u>Yerram Varun</u></p>
+                            <p><a href="https://openreview.net/pdf?id=7vzuibBYfM" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Accepted to ICOMP 2024</p>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f2f0f0a8;">
+                        <td style="padding: 15px; border-bottom: 2px solid #e0e0e0;">
+                            <h3 style="font-weight: 600;">
+                                <i class="fa-regular fa-newspaper"></i> Extraction and Calculation of Roadway Area from
+                                Satellite Images Using Improved Deep Learning Model and Post-Processing
+                            </h3>
+                            <p style="color: #6c757d;"><u>Yerram Varun</u>, Hiroyuki Takeshita, Yuji Iwahori, Yoshitsugu Hayashi, M. K. Bhuyan,
+                                Shinji Fukui, Boonserm Kijsirikul, Aili Wang</p>
+                            <p><a href="https://www.mdpi.com/2313-433X/8/5/124" class="btn btn-primary"
+                                    style="background-color: #007bff; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px;">View
+                                    Paper</a></p>
+                            <p><i class="fa-solid fa-medal"></i> Accepted to Journal of Imaging, MDPI</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

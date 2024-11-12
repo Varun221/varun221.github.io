@@ -1,0 +1,967 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Publications</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MathJax -->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <style>
+        .label {
+          color: darkblue;
+          padding: 3px;
+          font-family: Arial;
+        }
+        .video {background-color: #c7db4d;}
+        .slides {background-color: #f0d043;}
+        .talk-title {color: #5a8f3b}
+      </style>
+    <!-- #f7e17e #cbe691 -->
+  </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Publications</title>
+    <meta name="description" content="Publications with links to papers, blogs and code.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://rachitbansal.github.io/papers.html">
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
+</head>
+
+  <body>
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Rachit Bansal</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/papers.html">Publications</a>
+          
+        
+          
+        
+        <a class="page-link" href="https://rachitbansal.github.io/resources/CV.pdf">CV</a>
+<!--        <a href="">
+            <img src="image/UoS.ico" alt="DCS">
+        </a>-->
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="page-content">
+      <div class="row">
+        <div class="wrapper">
+          
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://drive.google.com/file/d/1tfTTK9MnJTbOoCgLCXe3V2y_aRWuxWmD/view?usp=sharing" target="_blank">
+              <img src="/img/paper/calm.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          LLM Augmented LLMs: Expanding Capabilities through Composition
+      </div>
+
+    <div class="paper_authors">
+        <u>Rachit Bansal</u>, Bidisha Samanta, Siddharth Dalmia, Nitish Gupta, Shikhar Vashishth, Sriram Ganapathy, Abhishek Bapna, Prateek Jain, Partha Talukdar
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">ICLR (under review) 2024</div>
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1tfTTK9MnJTbOoCgLCXe3V2y_aRWuxWmD/view?usp=sharing" target="_blank" class="links">Paper</a>
+        
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/abs/2210.09404" target="_blank">
+              <img src="/img/paper/information_measures.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          Measures of Information Reflect Memorization Patterns
+      </div>
+
+    <div class="paper_authors">
+        <u>Rachit Bansal</u>, Danish Pruthi, Yonatan Belinkov
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">NeurIPS 2022</div>
+    <div class="links">
+      <a href="https://arxiv.org/abs/2210.09404" target="_blank" class="links">Paper</a>
+        <a href="https://github.com/technion-cs-nlp/Information-Reflects-Memorization" target="_blank" class="links">Code</a>
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/abs/2205.12411" target="_blank">
+              <img src="/img/paper/mode.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          Linear Connectivity Reveals Generalization Strategies
+      </div>
+
+    <div class="paper_authors">
+        Jeevesh Juneja, <u>Rachit Bansal</u>, Kyunghyun Cho, João Sedoc, Naomi Saphra
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">ICLR 2023</div>
+    <div class="links">
+      <a href="https://arxiv.org/abs/2205.12411" target="_blank" class="links">Paper</a>
+        <a href="https://github.com/aNOnWhyMooS/connectivity" target="_blank" class="links">Code</a>
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/pdf/2012.00893.pdf" target="_blank">
+              <img src="/img/paper/TACL_Fig_1.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          Evaluating Explanations: How much do explanations from the teacher aid students?
+      </div>
+
+    <div class="paper_authors">
+        Danish Pruthi, <u>Rachit Bansal</u>, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">TACL 2021</div>
+    <div class="links">
+      <a href="https://arxiv.org/pdf/2012.00893.pdf" target="_blank" class="links">Paper</a>
+        <a href="https://github.com/danishpruthi/evaluating-explanations" target="_blank" class="links">Code</a>
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://openreview.net/pdf?id=1yieqYLUIXj" target="_blank">
+              <img src="/img/paper/coseco.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          CoSe-Co: Text Conditioned Generative CommonSense Contextualizer for Language Models
+      </div>
+
+    <div class="paper_authors">
+        <u>Rachit Bansal</u>, Milan Aggarwal, Sumit Bhatia, Jivat Neet Kaur, Balaji Krishnamurthy
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">CSKB AKBC 2021; NAACL 2022</div>
+    <div class="links">
+      <a href="https://openreview.net/pdf?id=1yieqYLUIXj" target="_blank" class="links">Paper</a>
+        
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://openreview.net/pdf?id=fn5K7VfI3MV" target="_blank">
+              <img src="/img/paper/no_need_to_know_everything.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          No Need to Know Everything! Efficiently Augmenting Language Models With External Knowledge
+      </div>
+
+    <div class="paper_authors">
+        Jivat Neet Kaur, Sumit Bhatia, Milan Aggarwal, <u>Rachit Bansal</u>, Balaji Krishnamurthy
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">CSKB AKBC 2021; NAACL (Findings) 2022</div>
+    <div class="links">
+      <a href="https://openreview.net/pdf?id=fn5K7VfI3MV" target="_blank" class="links">Paper</a>
+        
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/pdf/2105.14515.pdf" target="_blank">
+              <img src="/img/paper/how_low_too_low.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          How Low is Too Low? A Computational Perspective on Extremely Low-Resource Languages
+      </div>
+
+    <div class="paper_authors">
+        <u>Rachit Bansal</u>, Himanshu Choudhary, Ravneet Punia, Niko Schenk, Jacob L Dahl, Émilie Pagé-Perron
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">ACL SRW 2021</div>
+    <div class="links">
+      <a href="https://arxiv.org/pdf/2105.14515.pdf" target="_blank" class="links">Paper</a>
+        <a href="https://github.com/cdli-gh/Semi-Supervised-NMT-for-Sumerian-English" target="_blank" class="links">Code</a>
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/pdf/2104.05321.pdf" target="_blank">
+              <img src="/img/paper/endemic.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          Combining exogenous and endogenous signals with a semi-supervised co-attention network for early detection of COVID-19 fake tweets
+      </div>
+
+    <div class="paper_authors">
+        <u>Rachit Bansal</u>, William Scott Paka, Shubhashis Sengupta, Tanmoy Chakraborty
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">PAKDD 2021</div>
+    <div class="links">
+      <a href="https://arxiv.org/pdf/2104.05321.pdf" target="_blank" class="links">Paper</a>
+        
+        
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .paper_title {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .paper_authors {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+
+  #thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  #thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 180px 520px;
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+  .paper_logo {
+  float: left;
+  padding: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    margin-right: 8px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+  }
+  .conf_name {
+    float: right;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+
+</style>
+
+<div class="fullCard" id="thumbnail">
+    <div>
+          <a href="https://arxiv.org/pdf/2102.08924" target="_blank">
+              <img src="/img/paper/cross_sean.png " alt="" style="max-height:120px; max-width:180px; margin-top:20px;" class="center" />
+          </a>
+    </div>
+  <div class="cardContent">
+
+      <div class="paper_title">
+          Cross-SEAN: A cross-stitch semi-supervised neural attention model for COVID-19 fake news detection
+      </div>
+
+    <div class="paper_authors">
+        William Scott Paka, <u>Rachit Bansal</u>, Abhay Kaushik, Shubhashis Sengupta, Tanmoy Chakraborty
+    </div>
+      <hr />
+
+      <hr style="margin-bottom:5px" />
+      <div class="conf_name">Applied Soft Computing 2021</div>
+    <div class="links">
+      <a href="https://arxiv.org/pdf/2102.08924" target="_blank" class="links">Paper</a>
+        
+        
+    </div>
+
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  <footer class="text-center text-muted">
+    <hr/>
+    Last updated October 30, 2024.<br/>
+    <!--Created with
+    Based on the code of <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.
+    <a href="http://git-scm.com/">git</a>,
+    <a href="http://jekyllrb.com">jekyll</a>,
+    <a href="http://getbootstrap.com/">bootstrap</a>,
+    and <a href="http://www.vim.org/">vim</a>.<br/>
+    Feel free to reuse the
+    <a href="https://github.com/alopez/alopez.github.com">source code</a>.<br/>
+    Mirrors: <a href="http://www.cs.jhu.edu/~alopez/">cs.jhu.edu</a>,
+    <a href="http://alopez.github.io/">github.io</a>
+    <br/><br/>-->
+    </footer>
+  </body>
+</html>
