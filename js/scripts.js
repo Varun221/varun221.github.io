@@ -29,10 +29,10 @@ function ShowHide(divId) {
 }
 
 
-
-const see_more = document.getElementById("see-more");
-const dark_toggle = document.getElementById("dark-toggle");
-const myphoto = document.getElementById("myphoto");
+// Get elements or create dummy ones if they don't exist
+const see_more = document.getElementById("see-more") || { style: {} };
+const dark_toggle = document.getElementById("dark-toggle") || { style: {} };
+const myphoto = document.getElementById("myphoto") || { src: "" };
 
 
 // Initial state
