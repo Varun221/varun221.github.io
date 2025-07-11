@@ -13,6 +13,21 @@ body {
     -webkit-text-size-adjust: 100%
 }
 
+body.dark-mode {
+    color: #ebe9e9;
+    background-color: #201f1f;
+}
+
+body.dark-mode .site-nav .page-link {
+    color: #ebe9e9;
+    line-height: 1.5;
+}
+
+body.dark-mode .site-title,.site-title:visited {
+    color: #ebe9e9;
+}
+
+
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,figure,.highlight {
     margin-bottom: 15px
 }

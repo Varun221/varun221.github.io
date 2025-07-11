@@ -27,3 +27,31 @@ function ShowHide(divId) {
         document.getElementById(divId).style.display = 'none';
     }
 }
+
+
+
+const see_more = document.getElementById("see-more");
+const dark_toggle = document.getElementById("dark-toggle");
+
+
+// Initial state
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+
+    see_more.style.color = "white";
+    dark_toggle.style.color = "white";
+}
+
+
+// Toggle function
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+
+    see_more.style.color = (theme == 'dark') ? 'white' : 'black';
+    dark_toggle.style.color = (theme == 'dark') ? 'white' : 'black';
+
+}
+
+
