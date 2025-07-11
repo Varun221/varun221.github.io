@@ -53,8 +53,8 @@
                 <div class="trigger">
                     <a class="page-link" href="/publications.html">Publications</a>
                     <a class="page-link" href="assets/ResearchCV.pdf">CV</a>
-                    <a onclick="toggleDarkMode()" class="page-link"> <i class="fa-solid fa-circle-half-stroke" id="dark-toggle"
-                            style="color: black;"></i> </a>
+                    <a onclick="toggleDarkMode()" class="page-link"> <i class="fa-solid fa-circle-half-stroke"
+                            id="dark-toggle" style="color: black;"></i> </a>
                 </div>
             </nav>
 
@@ -69,14 +69,14 @@
     <div class="page-content">
         <div class="wrapper">
             <br>
-            <table style="width:120%">
+            <table style="width:120%" class="mydescription">
                 <tbody>
                     <tr>
                         <td style="width: 31%;">
                             <figure>
 
                                 <img src="assets/profile.png" alt="you_cant_see_me"
-                                    style="margin: 10px 0px; width: 210px;" name="fox" />
+                                    id="myphoto" style="margin: 10px 0px; width: 210px;" name="fox" />
 
                                 <figcaption style="text-align: left; width: 80%;">
                                     <a href="https://www.linkedin.com/in/yvarun25221/"><i
@@ -93,7 +93,7 @@
 
                             </figure>
                         </td>
-                        <td>
+                        <td class="mydescription">
                             <p>
                                 Hello! I am Varun, a PhD student at New York University's Center for Data Science
                                 advised
@@ -174,143 +174,152 @@
 
             <br><br><br> -->
 
+            <div class="mydescription">
 
-
-            <h2 id="news-and-timeline"><strong>News and Updates </strong></h2>
-            <p><strong>2025</strong></p>
-            <ul>
-                <li>
-                    <strong>Apr</strong><br>
-                    Attending ICLR 2025 in Singapore! See you there!
-                </li>
-            </ul>
-
-            <p><strong>2024</strong></p>
-            <ul>
-                <li>
-                    <strong>Dec</strong><br>
-                    Attending NeurIPS 2024 in Vancouver, Canada!
-                </li>
-                <li>
-                    <strong>Oct</strong><br>
-                    Presenting <u>Time-Reversed LLMs</u>, an awesome work with <a
-                        href="https://research.google/people/karthikeyanshanmugam/?&type=google"> Karthikeyan</a>, <a
-                        href="https://research.google/people/108152/?&type=google">Arun</a>, <a
-                        href="https://x.com/imrahulmaddy?lang=en">Rahul</a> and <a
-                        href="https://scholar.google.com/citations?user=MOO12i0AAAAJ&hl=en">Sravanti</a>, <br>
-                    Won the <strong>spotlight award at NeurIPS 2024!</strong> 🎉
-                </li>
-                <li>
-                    <strong>Sep</strong><br>
-                    Presenting <u>FreeNets</u>, a short work with <a href="https://x.com/imrahulmaddy?lang=en">Rahul
-                        Madhavan</a>. <br>
-                    Accepted to <a href="https://openreview.net/forum?id=7vzuibBYfM#discussion">ICOMP 2024</a>! 🎉
-                </li>
-                <li>
-                    <strong>Aug</strong><br>
-                    Presenting <u>FlowVQA</u>, work with <a
-                        href="https://www.linkedin.com/in/koseii/?originalSubdomain=in">Shubhankar Singh</a> and <a
-                        href="https://vgupta123.github.io/"> Prof. Vivek Gupta </a>, <br>
-                    Accepted to <a href="https://aclanthology.org/2024.findings-acl.78/">ACL 2024 Findings!</a> 🎉
-                </li>
-                <li>
-                    <strong>Feb</strong> <br>
-                    Presenting <u>HiRE</u>, an inference efficiency approach developed with <a
-                        href="https://praneethnetrapalli.org/">Praneeth</a> and <a
-                        href="https://github.com/YashasSamaga">Yashas</a>. <i><a
-                            href="https://arxiv.org/abs/2402.09360">[Preprint]</a></i>
-                </li>
-            </ul>
-
-
-
-            <p><strong>2023</strong></p>
-            <ul>
-                <li>
-                    <strong>July</strong> <br>
-                    Joining Machine learning optimizations team at Google Research, India!
-                </li>
-            </ul>
-
-            <p><a onclick="javascript:ShowHide('HiddenDiv')" id="see-more" style="color: black;"><i
-                        class="fas fa-caret-right"></i> &nbsp; See more </a></p>
-            <div class="mid" id="HiddenDiv" style="display: none;">
-                <p><strong>2022</strong></p>
+                <h2 id="news-and-timeline"><strong>News and Updates </strong></h2>
+                <p><strong>2025</strong></p>
                 <ul>
                     <li>
-                        <strong>Nov</strong> <br>
-                        Finished 38th (Silver Region) in <a
-                            href="https://www.kaggle.com/competitions/rsna-2022-cervical-spine-fracture-detection/leaderboard"
-                            class="text-dark">RSNA 2022 Cervical Spine Fracture Detection</a> on Kaggle.
+                        <strong>Apr</strong><br>
+                        Attending ICLR 2025 in Singapore! See you there!
+                    </li>
+                </ul>
+
+                <p><strong>2024</strong></p>
+                <ul>
+                    <li>
+                        <strong>Dec</strong><br>
+                        Attending NeurIPS 2024 in Vancouver, Canada!
                     </li>
                     <li>
-                        <strong>Oct</strong> <br>
-                        Finished 27th (Silver Region) in <a
-                            href="https://www.kaggle.com/competitions/mayo-clinic-strip-ai/overview"
-                            class="text-dark">Mayo
-                            Strip AI Competition </a> on Kaggle with a big shakeup :)
+                        <strong>Oct</strong><br>
+                        Presenting <u>Time-Reversed LLMs</u>, an awesome work with <a
+                            href="https://research.google/people/karthikeyanshanmugam/?&type=google"> Karthikeyan</a>,
+                        <a href="https://research.google/people/108152/?&type=google">Arun</a>, <a
+                            href="https://x.com/imrahulmaddy?lang=en">Rahul</a> and <a
+                            href="https://scholar.google.com/citations?user=MOO12i0AAAAJ&hl=en">Sravanti</a>, <br>
+                        Won the <strong>spotlight award at NeurIPS 2024!</strong> 🎉
                     </li>
+                    <li>
+                        <strong>Sep</strong><br>
+                        Presenting <u>FreeNets</u>, a short work with <a href="https://x.com/imrahulmaddy?lang=en">Rahul
+                            Madhavan</a>. <br>
+                        Accepted to <a href="https://openreview.net/forum?id=7vzuibBYfM#discussion">ICOMP 2024</a>! 🎉
+                    </li>
+                    <li>
+                        <strong>Aug</strong><br>
+                        Presenting <u>FlowVQA</u>, work with <a
+                            href="https://www.linkedin.com/in/koseii/?originalSubdomain=in">Shubhankar Singh</a> and <a
+                            href="https://vgupta123.github.io/"> Prof. Vivek Gupta </a>, <br>
+                        Accepted to <a href="https://aclanthology.org/2024.findings-acl.78/">ACL 2024 Findings!</a> 🎉
+                    </li>
+                    <li>
+                        <strong>Feb</strong> <br>
+                        Presenting <u>HiRE</u>, an inference efficiency approach developed with <a
+                            href="https://praneethnetrapalli.org/">Praneeth</a> and <a
+                            href="https://github.com/YashasSamaga">Yashas</a>. <i><a
+                                href="https://arxiv.org/abs/2402.09360">[Preprint]</a></i>
+                    </li>
+                </ul>
+
+
+
+                <p><strong>2023</strong></p>
+                <ul>
                     <li>
                         <strong>July</strong> <br>
-                        Became Kaggle Notebooks Master! <a href="https://www.kaggle.com/yerramvarun"
-                            class="text-dark">Profile</a>
-                    </li>
-                    <li>
-                        <strong>May</strong> <br>
-                        Joined Amazon Science as an Applied Scientist Intern at Bangalore! <br>
-                        Won the best paper award at DeeLIO Workshop @ ACL 2022 for my work with Vivek Gupta!
-                    </li>
-                    <li>
-                        <strong>April</strong> <br>
-                        Published my work with Hiroyuki Takeshita and Yuji Iwahori in <a
-                            href="https://www.mdpi.com/journal/jimaging" class="text-dark">Journal of Imaging, MDPI
-                        </a><br>
-                        My Team won Silver Medal <i class="fa-solid fa-medal"></i> at Inter IIT Tech Meet 10.0 organized
-                        by
-                        IIT Kharagpur!
+                        Joining Machine learning optimizations team at Google Research, India!
                     </li>
                 </ul>
 
+                <p><a onclick="javascript:ShowHide('HiddenDiv')" id="see-more" style="color: black;"><i
+                            class="fas fa-caret-right"></i> &nbsp; See more </a></p>
+                <div class="mid" id="HiddenDiv" style="display: none;">
+                    <p><strong>2022</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Nov</strong> <br>
+                            Finished 38th (Silver Region) in <a
+                                href="https://www.kaggle.com/competitions/rsna-2022-cervical-spine-fracture-detection/leaderboard"
+                                class="text-dark">RSNA 2022 Cervical Spine Fracture Detection</a> on Kaggle.
+                        </li>
+                        <li>
+                            <strong>Oct</strong> <br>
+                            Finished 27th (Silver Region) in <a
+                                href="https://www.kaggle.com/competitions/mayo-clinic-strip-ai/overview"
+                                class="text-dark">Mayo
+                                Strip AI Competition </a> on Kaggle with a big shakeup :)
+                        </li>
+                        <li>
+                            <strong>July</strong> <br>
+                            Became Kaggle Notebooks Master! <a href="https://www.kaggle.com/yerramvarun"
+                                class="text-dark">Profile</a>
+                        </li>
+                        <li>
+                            <strong>May</strong> <br>
+                            Joined Amazon Science as an Applied Scientist Intern at Bangalore! <br>
+                            Won the best paper award at DeeLIO Workshop @ ACL 2022 for my work with Vivek Gupta!
+                        </li>
+                        <li>
+                            <strong>April</strong> <br>
+                            Published my work with Hiroyuki Takeshita and Yuji Iwahori in <a
+                                href="https://www.mdpi.com/journal/jimaging" class="text-dark">Journal of Imaging, MDPI
+                            </a><br>
+                            My Team won Silver Medal <i class="fa-solid fa-medal"></i> at Inter IIT Tech Meet 10.0
+                            organized
+                            by
+                            IIT Kharagpur!
+                        </li>
+                    </ul>
 
-                <p><strong>2021</strong></p>
-                <ul>
-                    <li>
-                        <strong>Dec</strong><br> Finished in Top 8% (Bronze Region) in <a
-                            href="https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation/leaderboard"
-                            class="text-dark">Sartorius-Cell Instance Segmentation Competition </a> on Kaggle
-                    </li>
-                    <li>
-                        <strong>Oct</strong><br> Conducted a <a
-                            href="https://www.youtube.com/watch?v=oE09cwlRRTQ&ab_channel=usharengaraju">workshop</a> on
-                        the
-                        basics of Transformer architecture at MLTechFest'21 organized by Tensorflow User Group (Mysuru)
-                        (<a href="https://www.meetup.com/TFUG-Mysuru/">Meetup!</a>) &
-                        Google Developer's Group (Mysuru) (<a href="https://gdg.community.dev/gdg-mysuru/">Website</a>).
-                    </li>
-                    <li>
-                        <strong>Sep</strong><br> Conducted a Workshop <a
-                            href="https://www.youtube.com/watch?v=H3shAnnO0zQ&ab_channel=IEEEAPSIT">session</a> on
-                        Computer
-                        vision - OpenCV basics - by IEEE SFIT & IEEE APSIT.
-                    </li>
-                    <li>
-                        <strong>Aug</strong><br> National Runner up at <a
-                            href="https://amazonmlchallenge.splashthat.com/" class="text-dark">Amazon Machine learning
-                            challenge 2021</a>.
-                    </li>
-                    <li>
-                        <strong>May</strong><br> Started as a Research Intern under Yuji Iwahori, Hiroyuki Takeshita and
-                        Yoshitsugu Hayashi at Chubu University, Kasugai, Japan.
-                    </li>
-                    <li>
-                        <strong>April</strong><br> Started as the Secretary of <a
-                            href="https://www.iitg.ac.in/sa/ai/#/about">IITG.ai</a>, AI Community of IIT Guwahati. <br>
-                        Won Silver Medal <i class="fa-solid fa-medal"></i> at Inter IIT Tech Meet 9.0 organized by IIT
-                        Kharagpur!
-                    </li>
-                </ul>
+
+                    <p><strong>2021</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Dec</strong><br> Finished in Top 8% (Bronze Region) in <a
+                                href="https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation/leaderboard"
+                                class="text-dark">Sartorius-Cell Instance Segmentation Competition </a> on Kaggle
+                        </li>
+                        <li>
+                            <strong>Oct</strong><br> Conducted a <a
+                                href="https://www.youtube.com/watch?v=oE09cwlRRTQ&ab_channel=usharengaraju">workshop</a>
+                            on
+                            the
+                            basics of Transformer architecture at MLTechFest'21 organized by Tensorflow User Group
+                            (Mysuru)
+                            (<a href="https://www.meetup.com/TFUG-Mysuru/">Meetup!</a>) &
+                            Google Developer's Group (Mysuru) (<a
+                                href="https://gdg.community.dev/gdg-mysuru/">Website</a>).
+                        </li>
+                        <li>
+                            <strong>Sep</strong><br> Conducted a Workshop <a
+                                href="https://www.youtube.com/watch?v=H3shAnnO0zQ&ab_channel=IEEEAPSIT">session</a> on
+                            Computer
+                            vision - OpenCV basics - by IEEE SFIT & IEEE APSIT.
+                        </li>
+                        <li>
+                            <strong>Aug</strong><br> National Runner up at <a
+                                href="https://amazonmlchallenge.splashthat.com/" class="text-dark">Amazon Machine
+                                learning
+                                challenge 2021</a>.
+                        </li>
+                        <li>
+                            <strong>May</strong><br> Started as a Research Intern under Yuji Iwahori, Hiroyuki Takeshita
+                            and
+                            Yoshitsugu Hayashi at Chubu University, Kasugai, Japan.
+                        </li>
+                        <li>
+                            <strong>April</strong><br> Started as the Secretary of <a
+                                href="https://www.iitg.ac.in/sa/ai/#/about">IITG.ai</a>, AI Community of IIT Guwahati.
+                            <br>
+                            Won Silver Medal <i class="fa-solid fa-medal"></i> at Inter IIT Tech Meet 9.0 organized by
+                            IIT
+                            Kharagpur!
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-
 
         </div>
     </div>

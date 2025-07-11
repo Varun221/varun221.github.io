@@ -46,6 +46,9 @@ body.dark-mode a {
     color: #2a7ae28d;
 }
 
+body.dark-mode .mydescription {
+    color: rgba(255, 255, 255, 0.678);
+}
 
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,figure,.highlight {
     margin-bottom: 15px

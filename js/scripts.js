@@ -32,6 +32,7 @@ function ShowHide(divId) {
 
 const see_more = document.getElementById("see-more");
 const dark_toggle = document.getElementById("dark-toggle");
+const myphoto = document.getElementById("myphoto");
 
 
 // Initial state
@@ -40,6 +41,7 @@ if (localStorage.getItem("theme") === "dark") {
 
     see_more.style.color = "white";
     dark_toggle.style.color = "white";
+    myphoto.src = "assets/profile_lowbright.png";
 }
 
 
@@ -51,6 +53,7 @@ function toggleDarkMode() {
 
     see_more.style.color = (theme == 'dark') ? 'white' : 'black';
     dark_toggle.style.color = (theme == 'dark') ? 'white' : 'black';
+    myphoto.src = (theme == 'dark') ? "assets/profile_lowbright.png" : "assets/profile.png";
 
 }
 
