@@ -1,14 +1,4 @@
 User-agent: *
-Allow: /
-
-# Allow all main pages
-Allow: /index.html
-Allow: /publications.html
-Allow: /assets/
-Allow: /css/
-Allow: /js/
-
-# Block potential sensitive files
 Disallow: /assets/ResearchCV.pdf
 Disallow: /*.log
 Disallow: /admin/
@@ -16,8 +6,8 @@ Disallow: /private/
 Disallow: /temp/
 Disallow: /.git/
 Disallow: /node_modules/
+Crawl-delay: 1
 
-# Allow specific academic crawlers
 User-agent: Googlebot
 Allow: /
 Allow: /assets/ResearchCV.pdf
@@ -29,24 +19,4 @@ Allow: /assets/ResearchCV.pdf
 User-agent: Slurp
 Allow: /
 
-# Block AI training crawlers if you prefer
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-# Sitemap location (create this file)
-Sitemap: https://varun221.github.io.com/sitemap.xml
-
-# Crawl delay to be respectful
-Crawl-delay: 1
+Sitemap: https://varun221.github.io/sitemap.xml
